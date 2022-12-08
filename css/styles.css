@@ -1177,6 +1177,7 @@ input[type='checkbox'] {
 	padding-top: 6.375rem;
 	padding-bottom: 6.5rem;
 	background-color: #fbfbfb;
+	height: 100vh; 
 }
 
 .slider h2 {
@@ -1494,6 +1495,7 @@ input[type='checkbox'] {
 	padding-bottom: 3.375rem;
 	background-color: #fbfbfb;
 	text-align: center;
+	height: 100vh;
 }
 
 .basic-2 h2 {
@@ -2102,6 +2104,7 @@ a:hover.back-to-top {
 		max-width: 17.5rem;
 		text-align: left;
 		vertical-align: top;
+		height: 100vh;
 	}
 	
 	.cards-1 div.card:nth-child(3n+2) {

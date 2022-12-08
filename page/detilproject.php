@@ -1,4 +1,4 @@
-        <div class="container">
+        <div class="container" style="height: 100vh">
             <div class="row"><div style="width:100%; padding-top:40px;">
                 <h2>Project Detail</h2>
                 <hr />
