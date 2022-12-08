@@ -1,13 +1,14 @@
     <!-- Description -->
-    <div class="cards-1">
-    <div class="container">
-        <div class="row">
-            <div style="width:100%; padding-bottom:25px;">
-                <h2>Communities of Practice</h2>
-                <hr />
-            </div>
-        <div class="col-lg-12">
-                <?php
+    <div class="cards-1 ">
+        <div class="container py-4  pb-xl-5 mb-xl-5">
+            <div class="row pb-xl-5 mb-xl-5">
+                <div class="mb-5 pb-5">
+                    <div style="width:100%; padding-bottom:25px;">
+                        <h2>Communities of Practice</h2>
+                        <hr />
+                    </div>
+                    <div class="col-lg-12">
+                        <?php
                 include"koneksi.php";
                 $sql="select cops.id_cop,cops.name,cops.description,researchers.name,cops.link_group from cops,researchers where cops.id_researcher=researchers.id_researcher";
                 $query=mysqli_query($koneksi,$sql);
@@ -49,9 +50,10 @@
                     
                     }
                 ?>
-            </div> <!-- end of col -->
-            </a>
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of cards-1 -->
-<!-- end of description -->
+                    </div> <!-- end of col -->
+                    </a>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->

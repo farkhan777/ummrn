@@ -1,16 +1,17 @@
     <!-- Description -->
     <div class="cards-1">
-    <div class="container">
-        <div class="row">
-            <div style="width:100%; padding-bottom:25px;">
-                <h2>Call for Projects</h2>
-                <hr />
-            </div>
-            
-            <div class="col-lg-12">
-                <?php
-                include"koneksi.php"; 
-                $sql="select projects.id_project, projects.title,researchers.name, cfps.quota,cfps.funding,cfps.deadline from projects,researchers, cfps where projects.id_project=cfps.id_project and projects.id_researcher=researchers.id_researcher";
+        <div class="container py-4  pb-xl-5 mb-xl-5">
+            <div class="mb-5 pb-5">
+                <div class="row pb-xl-5 mb-xl-5">
+                    <div style="width:100%; padding-bottom:25px;">
+                        <h2>Call for Projects</h2>
+                        <hr />
+                    </div>
+
+                    <div class="col-lg-12">
+                        <?php
+                include"koneksi.php";
+                $sql="select projects.id_project, projects.title,researchers.name, cfps.quota,cfps.funding,cfps.deadline from projects,researchers,cfps where projects.id_project=cfps.id_project and projects.id_researcher=researchers.id_researcher";
                 $query=mysqli_query($koneksi,$sql);
                 while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
                     $rp=number_format($row[4],2,",",".");
@@ -34,8 +35,9 @@
                     
                     }
                 ?>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of cards-1 -->
-<!-- end of description -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
