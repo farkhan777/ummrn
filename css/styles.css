@@ -1715,12 +1715,13 @@ input[type='checkbox'] {
 /*     17. Footer     */
 /**********************/
 .footer {
-	padding-top: 5rem;
+	padding: 1.5rem;
 	background-color: #113448;
 }
 
 .footer .text-container {
 	margin-bottom: 2.25rem;
+
 }
 
 .footer h4 {
