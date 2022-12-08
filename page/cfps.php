@@ -9,8 +9,8 @@
             
             <div class="col-lg-12">
                 <?php
-                include"koneksi.php";
-                $sql="select projects.id_project, projects.title,researchers.name, cfps.quota,cfps.funding,cfps.deadline from projects,researchers,cfps where projects.id_project=cfps.id_project and projects.id_researcher=researchers.id_researcher";
+                include"koneksi.php"; 
+                $sql="select projects.id_project, projects.title,researchers.name, cfps.quota,cfps.funding,cfps.deadline from projects,researchers, cfps where projects.id_project=cfps.id_project and projects.id_researcher=researchers.id_researcher";
                 $query=mysqli_query($koneksi,$sql);
                 while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
                     $rp=number_format($row[4],2,",",".");
