@@ -1,8 +1,7 @@
-
 <div class="basic-2" style="padding-top:45px;">
-    <div class="container">
-        <div class="row">
-             <div class="col-lg-12" style="text-align:left;">
+    <div class="container my-5 pb-xl-5 mb-xl-5 ">
+        <div class="row pb-xl-5 mb-xl-5">
+            <div class="col-lg-12 my-5 py-5" style="text-align:left;">
                 <h2>Researchers</h2>
                 <hr />
                 <?php

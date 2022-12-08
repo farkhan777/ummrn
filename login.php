@@ -16,15 +16,15 @@
 		header("location:index.php?page=login&stat=false");
 	}
 
-	$sql_researcher="select * from researchers where usr='$username' and psw='$psw'";
-	$query_researcher=mysqli_query($koneksi,$sql_researcher);
-	if($hasil=mysqli_fetch_array($query_researcher,MYSQLI_NUM)){
-		$_SESSION['user']=$username;
-		$_SESSION['userid']=$hasil[0];
-		$_SESSION['nama']=$hasil[1];
-		header("location:index.php");
-	}
-	else{
-		header("location:index.php?page=login&stat=false");
-	}
+	// $sql_researcher="select * from researchers where usr='$username' and psw='$psw'";
+	// $query_researcher=mysqli_query($koneksi,$sql_researcher);
+	// if($hasil=mysqli_fetch_array($query_researcher,MYSQLI_NUM)){
+	// 	$_SESSION['user']=$username;
+	// 	$_SESSION['userid']=$hasil[0];
+	// 	$_SESSION['nama']=$hasil[1];
+	// 	header("location:index.php");
+	// }
+	// else{
+	// 	header("location:index.php?page=login&stat=false");
+	// }
 ?>
