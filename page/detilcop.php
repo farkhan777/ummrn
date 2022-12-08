@@ -23,7 +23,7 @@
                     </div> 
                 </div>              
                         <h2>$row[2]</h2>
-                        <h6><i>$row[4]</i></h6>
+                        <h6><i>Group link: <a href='$row[4]'>$row[4]</a></i></h6>
                         Publication: $row[3]<br />
                         Status: $row[6]<br />
                         <p>
