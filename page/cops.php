@@ -10,7 +10,7 @@
                     <div class="col-lg-12">
                         <?php
                 include"koneksi.php";
-                $sql="select cops.id_cop,cops.name,cops.description,researchers.name from cops,researchers where cops.id_researcher=researchers.id_researcher";
+                $sql="select cops.id_cop,cops.name,cops.description,researchers.name,cops.link_group from cops,researchers where cops.id_researcher=researchers.id_researcher";
                 $query=mysqli_query($koneksi,$sql);
                 while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
                     echo"
@@ -39,6 +39,9 @@
                                 echo"
                                     $n. $rows[0] <br />";
                             }
+                            echo"
+                                <p>Link group: <a href='$row[4]'>$row[4]</a></p>
+                            ";
                             echo"
                         </div>
                     </div>

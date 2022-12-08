@@ -1,4 +1,4 @@
-    <div class="container">
+    <div class="container" style="height: 100vh">
         <div class="row"><div style="width:100%; padding-top:40px;">
             <h2>Community Detail</h2>
             <hr />
@@ -23,7 +23,7 @@
                     </div> 
                 </div>              
                         <h2>$row[2]</h2>
-                        <h6><i>$row[4]</i></h6>
+                        <h6><i>Group link: <a href='$row[4]'>$row[4]</a></i></h6>
                         Publication: $row[3]<br />
                         Status: $row[6]<br />
                         <p>

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="height: 100vh">
         <div class="row" style="padding-top:40px;padding-bottom:75px;";>
         <div class="col-lg-3">
         <?php

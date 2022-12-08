@@ -95,16 +95,29 @@
                     <a class="nav-link page-scroll" href="index.php?page=projects">PROJECTS</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.php?page=cfps">CALL FOR PROJECTS</a>
-                </li>
+                <?php
+                    if(!$_SESSION['user']){
+                        echo"
+                        <li class='nav-item'>
+                            <a class='nav-link page-scroll' href='index.php?page=testi'>TESTIMONI</a>
+                        </li>
+                        ";
+                    }
+                ?>
                 <?php
                     if($_SESSION['user']){
+                        echo"
+                        <li class='nav-item'>
+                            <a class='nav-link page-scroll' href='index.php?page=cfps'>CALL FOR PROJECTS</a>
+                        </li>
+                        ";
                         echo"
                             <li class='nav-item dropdown'>
                                 <span class='nav-link dropdown-toggle page-scroll' id='navbarDropdown' role='button' aria-haspopup='true' aria-expanded='false'>MY ACCOUNT</span>
                                 <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
                                     <a class='dropdown-item' href='index.php?page=notifications'><span class='item-text'>NOTIFICATIONS</span></a>
+                                    <div class='dropdown-items-divide-hr'></div>
+                                    <a class='dropdown-item' href='index.php?page=history'><span class='item-text'>HISTORY</span></a>
                                     <div class='dropdown-items-divide-hr'></div>
                                     <a class='dropdown-item' href='logout.php'><span class='item-text'>LOGOUT</span></a>
                                 </div>
@@ -163,5 +176,6 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
 
 </html>

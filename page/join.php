@@ -7,6 +7,19 @@
             
             <div class="col-lg-6">
                 <div class="text-container">
+
+                    <h3>Information</h3>
+                    <?php
+                        include"koneksi.php";
+                        $sql="select * from cfps where id_cfp=1";
+                        $query=mysqli_query($koneksi,$sql);
+                        while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
+                            echo"$row[2]";
+                        
+                        }
+                    ?>
+                    <p />
+
                     <h3>Requirements and Rules</h3>
                     <p>Please read the requirements and rules carefully before submitting your request.</p>
                     <?php
@@ -14,7 +27,7 @@
                         $sql="select * from cfps where id_cfp=1";
                         $query=mysqli_query($koneksi,$sql);
                         while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
-                            echo"$row[2]";
+                            echo"$row[3]";
                         
                         }
                     ?>
