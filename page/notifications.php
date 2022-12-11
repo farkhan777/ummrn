@@ -1,5 +1,5 @@
     <!-- Description -->
-    <div class="cards-1">
+    <div class="cards-1" style='height: 100vh'>
     <div class="container">
         <div class="row">
 

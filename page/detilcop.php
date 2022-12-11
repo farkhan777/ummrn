@@ -4,7 +4,7 @@
             <hr />
         </div>
             <div class="col-lg-3">
-                <div class="text-container">
+                <div class="text-container" style='padding-top: 30px'>
                     <div class='image-wrapper'>
                         <img class='img-fluid' style="height:100px; width:200px; margin-bottom:10px; float:left;" src='images/hexagon-green.svg' alt='alternative'>
                     </div> 
@@ -17,17 +17,14 @@
                 $query=mysqli_query($koneksi,$sql); 
                 while($row=mysqli_fetch_array($query,MYSQLI_NUM)){
                 echo"  
-                <div class='text-container'>
-                    <div class='image-wrapper'>
-                        <img class='img-fluid' style='height:100px; width:200px; margin-bottom:10px;' src='images/hexagon-green.svg' alt='alternative'>
-                    </div> 
+                <div class='text-container' style='padding-top: 30px'>
+                <h2>$row[2]</h2>
+                <h6><i>Group link: <a href='$row[4]'>$row[4]</a></i></h6>
+                Publication: $row[3]<br />
+                Status: $row[6]<br />
+                <p>
+                <p>Attachment: <a href='$row[5]'>$row[5]</a></p>
                 </div>              
-                        <h2>$row[2]</h2>
-                        <h6><i>Group link: <a href='$row[4]'>$row[4]</a></i></h6>
-                        Publication: $row[3]<br />
-                        Status: $row[6]<br />
-                        <p>
-                        <p>Attachment: <a href='$row[5]'>$row[5]</a></p>
                 ";
                 }
                 ?>  
